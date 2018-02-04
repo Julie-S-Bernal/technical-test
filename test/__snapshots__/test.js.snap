@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Test: Ensure page content should match snapshots 200 1`] = `
+"<!doctype html>
+<html>
+    <head>
+        <title>Welcome to Acme</title>
+    </head>
+    <body>
+      <h1 id=\\"thisistheaboutpage\\">This is the About page</h1>
+<p>Acme Co. is a reputable maker of widgets and is an international brand.</p>
+<p>Thank you for your interest in our services. Please contact us at enquiries@acme.com.</p>
+    </body>
+</html>
+"
+`;
+
+exports[`Project Test: Ensure page content should match snapshots 200 2`] = `
+"<!doctype html>
+<html>
+    <head>
+        <title>Welcome to Acme</title>
+    </head>
+    <body>
+      <h1 id=\\"jobsatacmeco\\">Jobs at Acme Co.</h1>
+<p>Acme Co. is often seeking candidates in the areas of marketing, finance, customer support and sales. If you are an enthusiastic go-getter, you don't need to look any further for your next step up the corporate career ladder.</p>
+<p>Send us an email at careers@acme.com for more information.</p>
+    </body>
+</html>
+"
+`;
+
+exports[`Project Test: Ensure page content should match snapshots 200 3`] = `
+"<!doctype html>
+<html>
+    <head>
+        <title>Welcome to Acme</title>
+    </head>
+    <body>
+      <h1 id=\\"valves\\">Valves</h1>
+<p>Acme Co. valves are amongst the highest quality in the industry. Whether it's for industrial, commercial, medical or space exploration, you can always count on an Acme Co. valve.</p>
+    </body>
+</html>
+"
+`;
