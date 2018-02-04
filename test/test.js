@@ -11,6 +11,7 @@ const paths = ['/about-page', '/jobs' , '/valves'];
 
 describe('Project Test:', () => {
     describe('Page Ping:', () => {
+        // looping over paths array which remove code duplications 
         paths.map( (path) => {
             it('should respond with 200', (done) => {
                 request(require('../app.js'))
