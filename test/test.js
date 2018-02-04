@@ -1,5 +1,12 @@
 const request = require('supertest');
 
+
+/* 
+ I went to the JSroundabout meetup where they were using jest and snapshot testing.
+ I took it a learning opprtunity to use it in this project, this was very useful to 
+ make the page-content tests because Jest automatically generate the content and saves 
+ it in the __snapshot__ folder. If the content change the snapshots tests can be re-generated on demand.
+*/
 const paths = ['/about-page', '/jobs' , '/valves'];
 
 describe('Project Test:', () => {
@@ -27,6 +34,7 @@ describe('Project Test:', () => {
                 request(require('../app.js'))
                 .get(path)
                 .expect(200, (err, res) =>  {
+                    // compare page content with snapshots
                     expect(res.text).toMatchSnapshot();
                     done();
                 });
